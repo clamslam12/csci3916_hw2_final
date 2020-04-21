@@ -23,7 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(passport.initialize());
 
-mongoose.connect(`mongodb+srv://${process.env.USER_NAME_DB}:${process.env.PASSWORD_DB}@cluster0-n7zxr.mongodb.net/test?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://${process.env.USER_NAME_DB}:${process.env.PASSWORD_DB}@cluster0-dy2mx.mongodb.net/test?retryWrites=true&w=majority
+`)
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
